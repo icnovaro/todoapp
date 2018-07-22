@@ -1,4 +1,4 @@
 'use strict'
 
 require('./config/server');
-// require('./config/database');
+require('./config/database');

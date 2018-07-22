@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/loader.js",
   "scripts": {
+	"dev-docker": "./util_scripts/start-mongo-docker.sh && sleep 5 && npm run dev",
 	"dev": "nodemon",
 	"production": "pm2 start src/loader.js --name todo-app"
   },
