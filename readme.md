@@ -32,6 +32,8 @@ $ cd path/to/the/project/directory
 ```bash
 $ docker-compose up -d --build
 ```
+ - Open [http://localhost/](http://localhost/) in yout browser
+ 
  - Stop all containers
 
 ```bash
