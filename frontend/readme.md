@@ -1,3 +1,3 @@
 # Frontend App
 
-- Did with [Reactjs](https://reactjs.org) and [Webpack](https://webpack.js.org)
+- Was done with [Reactjs](https://reactjs.org), [Webpack](https://webpack.js.org) and [Redux](https://github.com/reduxjs/redux) 
