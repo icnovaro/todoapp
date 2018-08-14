@@ -1,9 +1,9 @@
 FROM node:8-alpine
 
-ADD . src/
+ADD . app/
 
-WORKDIR /src
+WORKDIR /app
 
 RUN npm i
 
-CMD npm run dev 
+CMD sleep 5 && node src/loader.js

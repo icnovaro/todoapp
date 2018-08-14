@@ -4,19 +4,25 @@
   "description": "",
   "main": "src/loader.js",
   "scripts": {
-	"dev-docker": "./util_scripts/start-mongo-docker.sh && sleep 5 && npm run dev",
-	"dev": "nodemon",
-	"production": "pm2 start src/loader.js --name todo-app"
+    "dev-docker": "./util_scripts/start-mongo-docker.sh && sleep 5 && npm run dev",
+    "dev": "nodemon",
+	"production": "pm2 start src/loader.js --name todo-app",
+	"lint": "eslint --ignore-path .gitignore ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+	"body-parser": "^1.15.2",
+	"express": "^4.14.0",
+	"mongoose": "^4.7.0",
+	"node-restful": "^0.2.5",
+	"pm2": "^2.1.5"
+  },
   "devDependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mongoose": "^4.7.0",
-    "node-restful": "^0.2.5",
-    "nodemon": "^1.11.0",
-    "pm2": "^2.1.5"
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "nodemon": "^1.11.0"
   }
 }

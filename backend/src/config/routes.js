@@ -1,13 +1,12 @@
-'use strict'
 const express = require('express');
 
-module.exports = function(server) {
+const todoService = require('../api/todo/todoService');
 
-	// API routes
-	const router = express.Router();
-	server.use('/api', router);
+module.exports = function (server) {
+  // API routes
+  const router = express.Router();
+  server.use('/api', router);
 
-	// TODO Routes
-	const todoService = require('../api/todo/todoService');
-	todoService.register(router, '/todos');
-}
+  // TODO Routes
+  todoService.register(router, '/todos');
+};
