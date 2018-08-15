@@ -32,7 +32,7 @@ $ cd path/to/the/project/directory
 ```bash
 $ docker-compose up -d --build
 ```
- - Build, for production, and start all app layers (MongoDB, Bakckend API and Frontend) in back ground containerd
+ - Build, for production, and start all app layers (MongoDB, Backend API and Frontend) in containers running in background
 ```bash
 $ docker-compose -f docker-compose.prod.yml up -d --build   
 ```
