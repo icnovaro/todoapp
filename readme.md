@@ -3,11 +3,11 @@
 <!-- TOC -->
 
 - [Todo app](#todo-app)
-	- [1. About](#1-about)
-	- [2. Run the application with docker compose](#2-run-the-application-with-docker-compose)
-		- [2.1 Install Docker for your plataform](#21-install-docker-for-your-plataform)
-		- [2.2 Install Docker-compose for your plataform](#22-install-docker-compose-for-your-plataform)
-	- [3. Run the application](#3-run-the-application)
+    - [1. About](#1-about)
+    - [2. Run the application with docker compose](#2-run-the-application-with-docker-compose)
+        - [2.1 Install Docker for your plataform](#21-install-docker-for-your-plataform)
+        - [2.2 Install Docker-compose for your plataform](#22-install-docker-compose-for-your-plataform)
+    - [3. Run the application](#3-run-the-application)
 
 <!-- /TOC -->
 
@@ -32,7 +32,7 @@ $ cd path/to/the/project/directory
 ```bash
 $ docker-compose up -d --build
 ```
- - Build, for production, and start all app layers (NongoDB, Bakckend API and Frontend) in back ground containerd
+ - Build, for production, and start all app layers (MongoDB, Bakckend API and Frontend) in back ground containerd
 ```bash
 $ docker-compose -f docker-compose.prod.yml up -d --build   
 ```
