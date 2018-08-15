@@ -1,0 +1,11 @@
+FROM node:8-alpine
+
+ADD . app/
+
+WORKDIR /app
+
+# https://stackoverflow.com/questions/9268259/how-do-you-prevent-install-of-devdependencies-npm-modules-for-node-js-package
+# restore only Dependences, nor DevDependencies , in package.json
+RUN npm i --only=production
+
+CMD sleep 5 && node src/loader.js

@@ -32,6 +32,11 @@ $ cd path/to/the/project/directory
 ```bash
 $ docker-compose up -d --build
 ```
+ - Build, for production, and start all app layers (NongoDB, Bakckend API and Frontend) in back ground containerd
+```bash
+$ docker-compose -f docker-compose.prod.yml up -d --build   
+```
+
  - Open [http://localhost/](http://localhost/) in your browser
  
  - Stop all containers

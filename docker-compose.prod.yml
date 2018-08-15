@@ -1,0 +1,30 @@
+version: '3'
+services:
+  api-todo:
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile.prod
+    ports:
+      - 3003:3003
+    environment:
+      MONGO_URL: mongodb
+      API_PORT: 3003
+    
+    depends_on: 
+      - mongodb
+    links: 
+      - mongodb
+  
+  mongodb:
+    image: mongo:3.6
+    ports:
+      - 27017:27017
+  
+  frontend-todo:
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile.prod
+    ports:
+      - 80:8080
+    depends_on:
+      - api-todo
